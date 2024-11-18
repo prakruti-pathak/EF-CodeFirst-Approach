@@ -19,5 +19,9 @@ namespace EFCodeFirstDemo.Models
         [Required]
         [StringLength(12)]
         public string PhoneNumber { get; set; }
+
+        //foreign key and navigation
+        public int DepartmentId { get; set; }
+        public virtual Department Department { get; set; }
     }
 }

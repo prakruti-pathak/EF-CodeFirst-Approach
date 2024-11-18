@@ -19,6 +19,7 @@ namespace EFCodeFirstDemo.Dtos
         [Required]
         [StringLength(12)]
         public string PhoneNumber { get; set; }
+        public int DepartmentId { get; set; }
 
     }
 }

@@ -13,6 +13,12 @@ namespace EFCodeFirstDemo.Data
 
         }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Department> Departments{ get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseLazyLoadingProxies();
+        }
+
 
     }
 }

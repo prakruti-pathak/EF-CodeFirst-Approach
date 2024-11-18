@@ -43,6 +43,26 @@
   },
   {
     "ContainingType": "EFCodeFirstDemo.Controllers.EmployeeController",
+    "Method": "GetAllEmployeesUsingEagerLoading",
+    "RelativePath": "api/Employee/GetAllEmployeesUsingEagerLoading",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFCodeFirstDemo.Controllers.EmployeeController",
+    "Method": "GetAllEmployeesUsingLazyLoading",
+    "RelativePath": "api/Employee/GetAllEmployeesUsingLazyLoading",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFCodeFirstDemo.Controllers.EmployeeController",
     "Method": "GetEmployeeById",
     "RelativePath": "api/Employee/GetEmployeeById/{id}",
     "HttpMethod": "GET",
@@ -55,6 +75,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFCodeFirstDemo.Controllers.EmployeeController",
+    "Method": "GetEmployeesWithDepartmentsInnerJoin",
+    "RelativePath": "api/Employee/GetEmployeesWithDepartmentsInnerJoin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

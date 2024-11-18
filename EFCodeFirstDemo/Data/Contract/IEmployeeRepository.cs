@@ -5,6 +5,9 @@ namespace EFCodeFirstDemo.Data.Contract
     public interface IEmployeeRepository
     {
           Task<IEnumerable<Employee>> GetAllEmployees();
+         Task<IEnumerable<Employee>> EagerLoading();
+        Task<IEnumerable<Employee>> LazyLoading();
+        Task<IEnumerable<object>> GetEmployeesWithDepartmentsInnerJoin();
 
           Task<Employee?> GetEmployeeById(int id);
 

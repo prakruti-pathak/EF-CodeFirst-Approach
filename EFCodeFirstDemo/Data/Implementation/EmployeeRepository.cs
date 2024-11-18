@@ -16,6 +16,49 @@ namespace EFCodeFirstDemo.Data.Implementation
         {
             return await _appDbContext.Employees.ToListAsync();
         }
+        //Eager Loading
+        public async Task<IEnumerable<Employee>> EagerLoading()
+        {
+            return await _appDbContext.Employees.Include(e => e.Department).ToListAsync();
+        }
+        /// <summary>
+        /// install nuget package Microsoft.EntityFrameworkCore.Proxies
+        /// add configuration and proxy in appdbcontext
+        /// and virtual to navigation na dcollection
+        /// add department name as lazy loading
+        /// </summary>
+        /// <returns></returns>
+        public async Task<IEnumerable<Employee>> LazyLoading()
+        {
+            var employees = await _appDbContext.Employees.ToListAsync();
+
+            foreach (var employee in employees)
+            {
+                //  lazy loading
+                Console.WriteLine($" Department: {employee.Department.DepartmentName}");
+            }
+
+            return employees;
+        }
+
+        // Inner Join
+        public async Task<IEnumerable<object>> GetEmployeesWithDepartmentsInnerJoin()
+        {
+            var result = await (from emp in _appDbContext.Employees
+                                join dept in _appDbContext.Departments
+                                on emp.DepartmentId equals dept.DepartmentId
+                                select new
+                                {
+                                    emp.EmployeeId,
+                                    emp.FirstName,
+                                    emp.LastName,
+                                    emp.Email,
+                                    emp.PhoneNumber,
+                                    DepartmentName = dept.DepartmentName
+                                }).ToListAsync();
+
+            return result;
+        }
 
         public async Task<Employee?> GetEmployeeById(int id)
         {

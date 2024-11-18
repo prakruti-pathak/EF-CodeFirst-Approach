@@ -7,6 +7,9 @@ namespace EFCodeFirstDemo.Services.Contract
     public interface IEmployeeService
     {
         Task<ServiceResponse<IEnumerable<EmployeeDto>>> GetAllEmployees();
+        Task<ServiceResponse<IEnumerable<EDto>>> GetAllEmployeesUsingEagerLoading();
+        Task<ServiceResponse<IEnumerable<EDto>>> LazyLoading();
+        Task<ServiceResponse<IEnumerable<object>>> GetEmployeesWithDepartmentsInnerJoin();
 
         Task<ServiceResponse<EmployeeDto>> GetEmployeeById(int id);
 

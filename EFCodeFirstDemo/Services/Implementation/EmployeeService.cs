@@ -27,6 +27,7 @@ namespace EFCodeFirstDemo.Services.Implementation
                     LastName = employee.LastName,
                     Email = employee.Email,
                     PhoneNumber = employee.PhoneNumber,
+                    DepartmentId= employee.DepartmentId,
                 }).ToList();
 
                 response.Success = true;
@@ -39,6 +40,94 @@ namespace EFCodeFirstDemo.Services.Implementation
             }
             return response;
         }
+        public async Task<ServiceResponse<IEnumerable<EDto>>> GetAllEmployeesUsingEagerLoading()
+        {
+            var response = new ServiceResponse<IEnumerable<EDto>>();
+            var employees = await _employeeRepository.EagerLoading();
+
+            if (employees != null && employees.Any())
+            {
+                var employeeDtos = employees.Select(employee => new EDto()
+                {
+                    EmployeeId = employee.EmployeeId,
+                    FirstName = employee.FirstName,
+                    LastName = employee.LastName,
+                    Email = employee.Email,
+                    PhoneNumber = employee.PhoneNumber,
+                    DepartmentId = employee.DepartmentId,
+                    DepartmentName = employee.Department.DepartmentName 
+                }).ToList();
+
+                response.Success = true;
+                response.Data = employeeDtos;
+            }
+            else
+            {
+                response.Success = false;
+                response.Message = "No record found!";
+            }
+
+            return response;
+        }
+        public async Task<ServiceResponse<IEnumerable<EDto>>> LazyLoading()
+        {
+            var response = new ServiceResponse<IEnumerable<EDto>>();
+            var employees = await _employeeRepository.LazyLoading();
+
+            if (employees != null && employees.Any())
+            {
+                var employeeDtos = employees.Select(employee => new EDto()
+                {
+                    EmployeeId = employee.EmployeeId,
+                    FirstName = employee.FirstName,
+                    LastName = employee.LastName,
+                    Email = employee.Email,
+                    PhoneNumber = employee.PhoneNumber,
+                    DepartmentId = employee.DepartmentId,
+                    //DepartmentName = employee.Department.DepartmentName
+                }).ToList();
+
+                response.Success = true;
+                response.Data = employeeDtos;
+            }
+            else
+            {
+                response.Success = false;
+                response.Message = "No record found!";
+            }
+
+            return response;
+        }
+        public async Task<ServiceResponse<IEnumerable<object>>> GetEmployeesWithDepartmentsInnerJoin()
+        {
+            var response = new ServiceResponse<IEnumerable<object>>();
+            var employees = await _employeeRepository.GetEmployeesWithDepartmentsInnerJoin();
+
+            if (employees != null && employees.Any())
+            {
+                var employeeDtos = employees.Select(employee => new
+                {
+                    EmployeeId = employee.GetType().GetProperty("EmployeeId")?.GetValue(employee),
+                    FirstName = employee.GetType().GetProperty("FirstName")?.GetValue(employee),
+                    LastName = employee.GetType().GetProperty("LastName")?.GetValue(employee),
+                    Email = employee.GetType().GetProperty("Email")?.GetValue(employee),
+                    PhoneNumber = employee.GetType().GetProperty("PhoneNumber")?.GetValue(employee),
+                    DepartmentName = employee.GetType().GetProperty("DepartmentName")?.GetValue(employee)
+                }).ToList();
+
+                response.Success = true;
+                response.Data = employeeDtos;
+            }
+            else
+            {
+                response.Success = false;
+                response.Message = "No record found!";
+            }
+
+            return response;
+        }
+
+
 
         public async Task<ServiceResponse<EmployeeDto>> GetEmployeeById(int id)
         {
@@ -53,6 +142,7 @@ namespace EFCodeFirstDemo.Services.Implementation
                     LastName = existingEmployee.LastName,
                     Email = existingEmployee.Email,
                     PhoneNumber = existingEmployee.PhoneNumber,
+                    DepartmentId= existingEmployee.DepartmentId,
                 };
                 response.Success = true;
                 response.Data = employeeDto;
@@ -81,6 +171,7 @@ namespace EFCodeFirstDemo.Services.Implementation
                 LastName = employeeDto.LastName,
                 Email = employeeDto.Email,
                 PhoneNumber = employeeDto.PhoneNumber,
+                DepartmentId = employeeDto.DepartmentId,
             };
 
             var result = await _employeeRepository.InsertEmployee(employee); 
@@ -114,6 +205,7 @@ namespace EFCodeFirstDemo.Services.Implementation
                 existingEmployee.LastName = employeeDto.LastName;
                 existingEmployee.Email = employeeDto.Email;
                 existingEmployee.PhoneNumber = employeeDto.PhoneNumber;
+                existingEmployee.DepartmentId = employeeDto.DepartmentId;
 
                 var result = await _employeeRepository.UpdateEmployee(existingEmployee); 
                 if (result)

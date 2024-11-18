@@ -141,3 +141,6 @@ C:\Repos\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\net8.0\refint\EFCodeFirstDemo
 C:\Repos\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\net8.0\EFCodeFirstDemo.pdb
 C:\Repos\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\net8.0\EFCodeFirstDemo.genruntimeconfig.cache
 C:\Repos\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\net8.0\ref\EFCodeFirstDemo.dll
+C:\Repos\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\net8.0\EFCodeFirstDemo.sourcelink.json
+C:\Repos\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\net8.0\Castle.Core.dll
+C:\Repos\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll

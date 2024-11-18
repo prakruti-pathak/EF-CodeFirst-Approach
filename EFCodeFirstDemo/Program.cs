@@ -17,10 +17,17 @@ builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddControllers();
 
 //database connection
-builder.Services.AddDbContextPool<AppDbContext>(options =>
+builder.Services.AddDbContext<AppDbContext>(options =>
 {
+    options.UseLazyLoadingProxies();
     options.UseSqlServer(builder.Configuration.GetConnectionString("mydb"));
-});
+        });
+           
+
+//builder.Services.AddDbContextPool<AppDbContext>(options =>
+//{
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("mydb"));
+//});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

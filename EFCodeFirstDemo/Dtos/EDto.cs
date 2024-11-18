@@ -2,8 +2,11 @@
 
 namespace EFCodeFirstDemo.Dtos
 {
-    public class AddEmployeeDto
+    public class EDto
     {
+        [Key]
+        public int EmployeeId { get; set; }
+
         [Required]
         public string FirstName { get; set; }
         [Required]
@@ -17,5 +20,6 @@ namespace EFCodeFirstDemo.Dtos
         [StringLength(12)]
         public string PhoneNumber { get; set; }
         public int DepartmentId { get; set; }
+        public string DepartmentName { get; set; }
     }
 }

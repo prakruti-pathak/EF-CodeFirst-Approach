@@ -26,6 +26,37 @@ namespace EFCodeFirstDemo.Controllers
             }
             return Ok(response);
         }
+        [HttpGet("GetAllEmployeesUsingEagerLoading")]
+        public async Task<IActionResult> GetAllEmployeesUsingEagerLoading()
+        {
+            var response = await _employeeService.GetAllEmployeesUsingEagerLoading();
+            if (!response.Success)
+            {
+                return NotFound(response);
+            }
+            return Ok(response);
+        }
+        [HttpGet("GetAllEmployeesUsingLazyLoading")]
+        public async Task<IActionResult> GetAllEmployeesUsingLazyLoading()
+        {
+            var response = await _employeeService.LazyLoading();
+            if (!response.Success)
+            {
+                return NotFound(response);
+            }
+            return Ok(response);
+        }
+
+        [HttpGet("GetEmployeesWithDepartmentsInnerJoin")]
+        public async Task<IActionResult> GetEmployeesWithDepartmentsInnerJoin()
+        {
+            var response = await _employeeService.GetEmployeesWithDepartmentsInnerJoin();
+            if (!response.Success)
+            {
+                return NotFound(response);
+            }
+            return Ok(response);
+        }
 
         [HttpGet("GetEmployeeById/{id}")]
         public async Task<IActionResult> GetEmployeeById(int id)
