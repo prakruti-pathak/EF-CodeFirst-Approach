@@ -57,7 +57,26 @@ namespace EFCodeFirstDemo.Controllers
             }
             return Ok(response);
         }
-
+        [HttpGet("GetEmployeesWithDepartmentsLeftJoin")]
+        public async Task<IActionResult> GetEmployeesWithDepartmentsLeftJoin()
+        {
+            var response = await _employeeService.GetEmployeesWithDepartmentsLeftJoin();
+            if (!response.Success)
+            {
+                return NotFound(response);
+            }
+            return Ok(response);
+        }
+        [HttpGet("GetEmployeesWithDepartmentsRightJoin")]
+        public async Task<IActionResult> GetEmployeesWithDepartmentsRightJoin()
+        {
+            var response = await _employeeService.GetEmployeesWithDepartmentsRightJoin();
+            if (!response.Success)
+            {
+                return NotFound(response);
+            }
+            return Ok(response);
+        }
         [HttpGet("GetEmployeeById/{id}")]
         public async Task<IActionResult> GetEmployeeById(int id)
         {

@@ -1,4 +1,5 @@
-﻿using EFCodeFirstDemo.Data.Contract;
+﻿using AutoMapper;
+using EFCodeFirstDemo.Data.Contract;
 using EFCodeFirstDemo.Dtos;
 using EFCodeFirstDemo.Models;
 using EFCodeFirstDemo.Services.Contract;
@@ -8,30 +9,23 @@ namespace EFCodeFirstDemo.Services.Implementation
     public class EmployeeService: IEmployeeService
     {
         private readonly IEmployeeRepository _employeeRepository;
+        private readonly IMapper _mapper;
 
-        public EmployeeService(IEmployeeRepository employeeRepository)
+        public EmployeeService(IEmployeeRepository employeeRepository,IMapper mapper)
         {
             _employeeRepository = employeeRepository;
+            _mapper = mapper;
+
         }
 
-        public async Task<ServiceResponse<IEnumerable<EmployeeDto>>> GetAllEmployees()
+        public async Task<ServiceResponse<List<EmployeeDto>>> GetAllEmployees()
         {
-            var response = new ServiceResponse<IEnumerable<EmployeeDto>>();
+            var response = new ServiceResponse<List<EmployeeDto>>();
             var employees = await _employeeRepository.GetAllEmployees(); 
             if (employees != null && employees.Any())
             {
-                var employeeDtos = employees.Select(employee => new EmployeeDto()
-                {
-                    EmployeeId = employee.EmployeeId,
-                    FirstName = employee.FirstName,
-                    LastName = employee.LastName,
-                    Email = employee.Email,
-                    PhoneNumber = employee.PhoneNumber,
-                    DepartmentId= employee.DepartmentId,
-                }).ToList();
-
                 response.Success = true;
-                response.Data = employeeDtos;
+                response.Data = _mapper.Map<List<EmployeeDto>>(employees);
             }
             else
             {
@@ -40,26 +34,15 @@ namespace EFCodeFirstDemo.Services.Implementation
             }
             return response;
         }
-        public async Task<ServiceResponse<IEnumerable<EDto>>> GetAllEmployeesUsingEagerLoading()
+        public async Task<ServiceResponse<List<EDto>>> GetAllEmployeesUsingEagerLoading()
         {
-            var response = new ServiceResponse<IEnumerable<EDto>>();
+            var response = new ServiceResponse<List<EDto>>();
             var employees = await _employeeRepository.EagerLoading();
 
             if (employees != null && employees.Any())
             {
-                var employeeDtos = employees.Select(employee => new EDto()
-                {
-                    EmployeeId = employee.EmployeeId,
-                    FirstName = employee.FirstName,
-                    LastName = employee.LastName,
-                    Email = employee.Email,
-                    PhoneNumber = employee.PhoneNumber,
-                    DepartmentId = employee.DepartmentId,
-                    DepartmentName = employee.Department.DepartmentName 
-                }).ToList();
-
                 response.Success = true;
-                response.Data = employeeDtos;
+                response.Data = _mapper.Map<List<EDto>>(employees);
             }
             else
             {
@@ -69,26 +52,15 @@ namespace EFCodeFirstDemo.Services.Implementation
 
             return response;
         }
-        public async Task<ServiceResponse<IEnumerable<EDto>>> LazyLoading()
+        public async Task<ServiceResponse<List<EmployeeDto>>> LazyLoading()
         {
-            var response = new ServiceResponse<IEnumerable<EDto>>();
+            var response = new ServiceResponse<List<EmployeeDto>>();
             var employees = await _employeeRepository.LazyLoading();
 
             if (employees != null && employees.Any())
             {
-                var employeeDtos = employees.Select(employee => new EDto()
-                {
-                    EmployeeId = employee.EmployeeId,
-                    FirstName = employee.FirstName,
-                    LastName = employee.LastName,
-                    Email = employee.Email,
-                    PhoneNumber = employee.PhoneNumber,
-                    DepartmentId = employee.DepartmentId,
-                    //DepartmentName = employee.Department.DepartmentName
-                }).ToList();
-
                 response.Success = true;
-                response.Data = employeeDtos;
+                response.Data = _mapper.Map<List<EmployeeDto>>(employees);
             }
             else
             {
@@ -98,25 +70,15 @@ namespace EFCodeFirstDemo.Services.Implementation
 
             return response;
         }
-        public async Task<ServiceResponse<IEnumerable<object>>> GetEmployeesWithDepartmentsInnerJoin()
+        public async Task<ServiceResponse<List<EDto>>> GetEmployeesWithDepartmentsInnerJoin()
         {
-            var response = new ServiceResponse<IEnumerable<object>>();
+            var response = new ServiceResponse<List<EDto>>();
             var employees = await _employeeRepository.GetEmployeesWithDepartmentsInnerJoin();
 
             if (employees != null && employees.Any())
             {
-                var employeeDtos = employees.Select(employee => new
-                {
-                    EmployeeId = employee.GetType().GetProperty("EmployeeId")?.GetValue(employee),
-                    FirstName = employee.GetType().GetProperty("FirstName")?.GetValue(employee),
-                    LastName = employee.GetType().GetProperty("LastName")?.GetValue(employee),
-                    Email = employee.GetType().GetProperty("Email")?.GetValue(employee),
-                    PhoneNumber = employee.GetType().GetProperty("PhoneNumber")?.GetValue(employee),
-                    DepartmentName = employee.GetType().GetProperty("DepartmentName")?.GetValue(employee)
-                }).ToList();
-
                 response.Success = true;
-                response.Data = employeeDtos;
+                response.Data = employees;
             }
             else
             {
@@ -126,7 +88,42 @@ namespace EFCodeFirstDemo.Services.Implementation
 
             return response;
         }
+        public async Task<ServiceResponse<List<EDto>>> GetEmployeesWithDepartmentsLeftJoin()
+        {
+            var response = new ServiceResponse<List<EDto>>();
+            var employees = await _employeeRepository.GetEmployeesWithDepartmentsLeftJoin();
 
+            if (employees != null && employees.Any())
+            {
+                response.Success = true;
+                response.Data = employees;
+            }
+            else
+            {
+                response.Success = false;
+                response.Message = "No record found!";
+            }
+
+            return response;
+        }
+        public async Task<ServiceResponse<List<EDto>>> GetEmployeesWithDepartmentsRightJoin()
+        {
+            var response = new ServiceResponse<List<EDto>>();
+            var employees = await _employeeRepository.GetEmployeesWithDepartmentsRightJoin();
+
+            if (employees != null && employees.Any())
+            {
+                response.Success = true;
+                response.Data = employees;
+            }
+            else
+            {
+                response.Success = false;
+                response.Message = "No record found!";
+            }
+
+            return response;
+        }
 
 
         public async Task<ServiceResponse<EmployeeDto>> GetEmployeeById(int id)
@@ -135,17 +132,9 @@ namespace EFCodeFirstDemo.Services.Implementation
             var existingEmployee = await _employeeRepository.GetEmployeeById(id); 
             if (existingEmployee != null)
             {
-                var employeeDto = new EmployeeDto()
-                {
-                    EmployeeId = existingEmployee.EmployeeId,
-                    FirstName = existingEmployee.FirstName,
-                    LastName = existingEmployee.LastName,
-                    Email = existingEmployee.Email,
-                    PhoneNumber = existingEmployee.PhoneNumber,
-                    DepartmentId= existingEmployee.DepartmentId,
-                };
+           
                 response.Success = true;
-                response.Data = employeeDto;
+                response.Data = _mapper.Map<EmployeeDto>(existingEmployee);
             }
             else
             {

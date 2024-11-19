@@ -1,12 +1,17 @@
 using EFCodeFirstDemo.Data;
 using EFCodeFirstDemo.Data.Contract;
 using EFCodeFirstDemo.Data.Implementation;
+using EFCodeFirstDemo.Dtos;
 using EFCodeFirstDemo.Services.Contract;
 using EFCodeFirstDemo.Services.Implementation;
 using Microsoft.EntityFrameworkCore;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//register mapper
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
+
 
 //Dependency Injection
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();

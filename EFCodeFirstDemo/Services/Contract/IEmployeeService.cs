@@ -6,10 +6,12 @@ namespace EFCodeFirstDemo.Services.Contract
 {
     public interface IEmployeeService
     {
-        Task<ServiceResponse<IEnumerable<EmployeeDto>>> GetAllEmployees();
-        Task<ServiceResponse<IEnumerable<EDto>>> GetAllEmployeesUsingEagerLoading();
-        Task<ServiceResponse<IEnumerable<EDto>>> LazyLoading();
-        Task<ServiceResponse<IEnumerable<object>>> GetEmployeesWithDepartmentsInnerJoin();
+        Task<ServiceResponse<List<EmployeeDto>>> GetAllEmployees();
+        Task<ServiceResponse<List<EDto>>> GetAllEmployeesUsingEagerLoading();
+        Task<ServiceResponse<List<EmployeeDto>>> LazyLoading();
+        Task<ServiceResponse<List<EDto>>> GetEmployeesWithDepartmentsInnerJoin();
+        Task<ServiceResponse<List<EDto>>> GetEmployeesWithDepartmentsLeftJoin();
+        Task<ServiceResponse<List<EDto>>> GetEmployeesWithDepartmentsRightJoin();
 
         Task<ServiceResponse<EmployeeDto>> GetEmployeeById(int id);
 

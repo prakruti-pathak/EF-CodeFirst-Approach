@@ -1,4 +1,5 @@
 ﻿using EFCodeFirstDemo.Data.Contract;
+using EFCodeFirstDemo.Dtos;
 using EFCodeFirstDemo.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,12 +13,12 @@ namespace EFCodeFirstDemo.Data.Implementation
             _appDbContext = appDbContext;
         }
 
-        public async Task<IEnumerable<Employee>> GetAllEmployees()
+        public async Task<List<Employee>> GetAllEmployees()
         {
             return await _appDbContext.Employees.ToListAsync();
         }
         //Eager Loading
-        public async Task<IEnumerable<Employee>> EagerLoading()
+        public async Task<List<Employee>> EagerLoading()
         {
             return await _appDbContext.Employees.Include(e => e.Department).ToListAsync();
         }
@@ -28,7 +29,7 @@ namespace EFCodeFirstDemo.Data.Implementation
         /// add department name as lazy loading
         /// </summary>
         /// <returns></returns>
-        public async Task<IEnumerable<Employee>> LazyLoading()
+        public async Task<List<Employee>> LazyLoading()
         {
             var employees = await _appDbContext.Employees.ToListAsync();
 
@@ -41,24 +42,65 @@ namespace EFCodeFirstDemo.Data.Implementation
             return employees;
         }
 
-        // Inner Join
-        public async Task<IEnumerable<object>> GetEmployeesWithDepartmentsInnerJoin()
+        public async Task<List<EDto>> GetEmployeesWithDepartmentsInnerJoin()
         {
             var result = await (from emp in _appDbContext.Employees
                                 join dept in _appDbContext.Departments
                                 on emp.DepartmentId equals dept.DepartmentId
-                                select new
+                                select new EDto
                                 {
-                                    emp.EmployeeId,
-                                    emp.FirstName,
-                                    emp.LastName,
-                                    emp.Email,
-                                    emp.PhoneNumber,
+                                    EmployeeId = emp.EmployeeId,
+                                    FirstName = emp.FirstName,
+                                    LastName = emp.LastName,
+                                    Email = emp.Email,
+                                    PhoneNumber = emp.PhoneNumber,
+                                    DepartmentId = emp.DepartmentId,
                                     DepartmentName = dept.DepartmentName
                                 }).ToListAsync();
 
             return result;
         }
+        public async Task<List<EDto>> GetEmployeesWithDepartmentsLeftJoin()
+        {
+            var result = await (from emp in _appDbContext.Employees
+                                join dept in _appDbContext.Departments
+                                on emp.DepartmentId equals dept.DepartmentId into deptGroup
+                                from dept in deptGroup.DefaultIfEmpty() 
+                                select new EDto
+                                {
+                                    EmployeeId = emp.EmployeeId,
+                                    FirstName = emp.FirstName,
+                                    LastName = emp.LastName,
+                                    Email = emp.Email,
+                                    PhoneNumber = emp.PhoneNumber,
+                                    DepartmentId = emp.DepartmentId,
+                                    DepartmentName = dept == null ? "No Department" : dept.DepartmentName
+                                }).ToListAsync();
+
+            return result;
+        }
+        public async Task<List<EDto>> GetEmployeesWithDepartmentsRightJoin()
+        {
+            var result = await (from dept in _appDbContext.Departments
+                                join emp in _appDbContext.Employees
+                                on dept.DepartmentId equals emp.DepartmentId into empGroup
+                                from emp in empGroup.DefaultIfEmpty()
+                                select new EDto
+                                {
+                                    EmployeeId = emp == null ? 0 : emp.EmployeeId,
+                                    FirstName = emp == null ? "No Employee" : emp.FirstName,
+                                    LastName = emp == null ? "No Employee" : emp.LastName,
+                                    Email = emp == null ? "No Email" : emp.Email,
+                                    PhoneNumber = emp == null ? "No Phone" : emp.PhoneNumber,
+                                    DepartmentId = dept.DepartmentId,
+                                    DepartmentName = dept.DepartmentName
+                                }).ToListAsync();
+
+            return result;
+        }
+
+
+
 
         public async Task<Employee?> GetEmployeeById(int id)
         {

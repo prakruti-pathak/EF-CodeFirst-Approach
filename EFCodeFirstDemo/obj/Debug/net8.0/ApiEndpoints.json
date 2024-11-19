@@ -89,6 +89,26 @@
   },
   {
     "ContainingType": "EFCodeFirstDemo.Controllers.EmployeeController",
+    "Method": "GetEmployeesWithDepartmentsLeftJoin",
+    "RelativePath": "api/Employee/GetEmployeesWithDepartmentsLeftJoin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFCodeFirstDemo.Controllers.EmployeeController",
+    "Method": "GetEmployeesWithDepartmentsRightJoin",
+    "RelativePath": "api/Employee/GetEmployeesWithDepartmentsRightJoin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFCodeFirstDemo.Controllers.EmployeeController",
     "Method": "UpdateEmployee",
     "RelativePath": "api/Employee/ModifyEmployee",
     "HttpMethod": "PUT",

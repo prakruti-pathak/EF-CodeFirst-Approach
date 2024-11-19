@@ -1,13 +1,16 @@
-﻿using EFCodeFirstDemo.Models;
+﻿using EFCodeFirstDemo.Dtos;
+using EFCodeFirstDemo.Models;
 
 namespace EFCodeFirstDemo.Data.Contract
 {
     public interface IEmployeeRepository
     {
-          Task<IEnumerable<Employee>> GetAllEmployees();
-         Task<IEnumerable<Employee>> EagerLoading();
-        Task<IEnumerable<Employee>> LazyLoading();
-        Task<IEnumerable<object>> GetEmployeesWithDepartmentsInnerJoin();
+        Task<List<Employee>> GetAllEmployees();
+         Task<List<Employee>> EagerLoading();
+        Task<List<Employee>> LazyLoading();
+        Task<List<EDto>> GetEmployeesWithDepartmentsInnerJoin();
+        Task<List<EDto>> GetEmployeesWithDepartmentsLeftJoin();
+        Task<List<EDto>> GetEmployeesWithDepartmentsRightJoin();
 
           Task<Employee?> GetEmployeeById(int id);
 

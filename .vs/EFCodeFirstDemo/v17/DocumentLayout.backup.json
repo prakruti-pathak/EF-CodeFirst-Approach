@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Repos\\EFCodeFirstDemo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\services\\implementation\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\services\\implementation\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\services\\contract\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\services\\contract\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\dtos\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\dtos\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\data\\implementation\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\data\\implementation\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,16 +39,16 @@
       "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\data\\contract\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\services\\contract\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\services\\contract\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\services\\implementation\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\services\\implementation\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\dtos\\edto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\dtos\\edto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|solutionrelative:efcodefirstdemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03CE67DD-80E4-4488-8E38-9ABFA5AEAF7B}|EFCodeFirstDemo\\EFCodeFirstDemo.csproj|c:\\repos\\efcodefirstdemo\\efcodefirstdemo\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,11 +82,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Dtos\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "EFCodeFirstDemo\\Dtos\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Dtos\\AutoMapperProfile.cs",
+              "RelativeToolTip": "EFCodeFirstDemo\\Dtos\\AutoMapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:54:43.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\appsettings.json",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\appsettings.json",
@@ -95,72 +112,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "EDto.cs",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Dtos\\EDto.cs",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\Dtos\\EDto.cs",
               "ToolTip": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Dtos\\EDto.cs",
               "RelativeToolTip": "EFCodeFirstDemo\\Dtos\\EDto.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA4wBYAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T12:02:53.98Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Models\\Department.cs",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\Models\\Department.cs",
               "ToolTip": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Models\\Department.cs",
               "RelativeToolTip": "EFCodeFirstDemo\\Models\\Department.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T11:22:49.171Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\Controllers\\EmployeeController.cs",
               "ToolTip": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "EFCodeFirstDemo\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAACkAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAqwEgAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T09:14:53.264Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "IEmployeeService.cs",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Services\\Contract\\IEmployeeService.cs",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\Services\\Contract\\IEmployeeService.cs",
               "ToolTip": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Services\\Contract\\IEmployeeService.cs",
               "RelativeToolTip": "EFCodeFirstDemo\\Services\\Contract\\IEmployeeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T09:13:45.196Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "EmployeeService.cs",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Services\\Implementation\\EmployeeService.cs",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\Services\\Implementation\\EmployeeService.cs",
               "ToolTip": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Services\\Implementation\\EmployeeService.cs",
               "RelativeToolTip": "EFCodeFirstDemo\\Services\\Implementation\\EmployeeService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAqwEcAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAzwD4AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T09:10:19.059Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ServiceResponse{T}.cs",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Dtos\\ServiceResponse{T}.cs",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\Dtos\\ServiceResponse{T}.cs",
@@ -173,20 +190,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "EmployeeDto.cs",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Dtos\\EmployeeDto.cs",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\Dtos\\EmployeeDto.cs",
               "ToolTip": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Dtos\\EmployeeDto.cs",
               "RelativeToolTip": "EFCodeFirstDemo\\Dtos\\EmployeeDto.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwBUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T09:09:12.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AddEmployeeDto.cs",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Dtos\\AddEmployeeDto.cs",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\Dtos\\AddEmployeeDto.cs",
@@ -199,20 +216,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IEmployeeRepository.cs",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Data\\Contract\\IEmployeeRepository.cs",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\Data\\Contract\\IEmployeeRepository.cs",
               "ToolTip": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Data\\Contract\\IEmployeeRepository.cs",
               "RelativeToolTip": "EFCodeFirstDemo\\Data\\Contract\\IEmployeeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAwAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T09:06:07.314Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "20241118080129_initialcreate.cs",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Migrations\\20241118080129_initialcreate.cs",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\Migrations\\20241118080129_initialcreate.cs",
@@ -225,46 +242,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Data\\Implementation\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\Data\\Implementation\\EmployeeRepository.cs",
               "ToolTip": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Data\\Implementation\\EmployeeRepository.cs",
               "RelativeToolTip": "EFCodeFirstDemo\\Data\\Implementation\\EmployeeRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAAB4AAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T07:59:32.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\Models\\Employee.cs",
               "ToolTip": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Models\\Employee.cs",
               "RelativeToolTip": "EFCodeFirstDemo\\Models\\Employee.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAUwBgAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T06:02:32.921Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\Data\\AppDbContext.cs",
               "ToolTip": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Data\\AppDbContext.cs",
               "RelativeToolTip": "EFCodeFirstDemo\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T05:58:35.703Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "EFCodeFirstDemo.csproj",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\EFCodeFirstDemo.csproj",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\EFCodeFirstDemo.csproj",
@@ -277,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "EFCodeFirstDemo.http",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\EFCodeFirstDemo.http",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\EFCodeFirstDemo.http",
@@ -290,13 +307,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Program.cs",
               "RelativeDocumentMoniker": "EFCodeFirstDemo\\Program.cs",
               "ToolTip": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\Program.cs",
               "RelativeToolTip": "EFCodeFirstDemo\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T05:31:15.976Z",
               "EditorCaption": ""

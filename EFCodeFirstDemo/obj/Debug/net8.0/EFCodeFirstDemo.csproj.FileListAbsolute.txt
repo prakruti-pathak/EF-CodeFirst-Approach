@@ -144,3 +144,4 @@ C:\Repos\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\net8.0\ref\EFCodeFirstDemo.dl
 C:\Repos\EFCodeFirstDemo\EFCodeFirstDemo\obj\Debug\net8.0\EFCodeFirstDemo.sourcelink.json
 C:\Repos\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\net8.0\Castle.Core.dll
 C:\Repos\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Repos\EFCodeFirstDemo\EFCodeFirstDemo\bin\Debug\net8.0\AutoMapper.dll

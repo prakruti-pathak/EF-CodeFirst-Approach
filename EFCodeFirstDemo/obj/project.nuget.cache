@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "a1YRa2aIU1Y=",
+  "dgSpecHash": "599YDYkUEgo=",
   "success": true,
   "projectFilePath": "C:\\Repos\\EFCodeFirstDemo\\EFCodeFirstDemo\\EFCodeFirstDemo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\prakruti\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\prakruti\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\prakruti\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\prakruti\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
